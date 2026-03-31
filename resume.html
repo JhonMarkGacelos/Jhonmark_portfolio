@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhon Mark Gacelos — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 11pt;
+      color: #000;
+      background: #fff;
+      line-height: 1.4;
+    }
+
+    .page {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 48px 56px;
+    }
+
+    /* Print button — hidden on print */
+    .print-bar {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 12px 56px 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .print-bar button, .print-bar a {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      padding: 6px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-print {
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-back {
+      background: transparent;
+      color: #555;
+      border: 1px solid #ccc;
+    }
+
+    @media print {
+      .print-bar { display: none; }
+      body { font-size: 11pt; }
+      .page { padding: 36px 48px; }
+    }
+
+    /* ─── Header ─── */
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 22pt;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+    }
+
+    .header .contact {
+      font-size: 10pt;
+      color: #111;
+      line-height: 1.7;
+    }
+
+    .header .contact a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .header .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .divider-sep {
+      display: inline;
+      margin: 0 6px;
+      color: #666;
+    }
+
+    /* ─── Section ─── */
+    section {
+      margin-top: 16px;
+    }
+
+    .section-title {
+      font-size: 11pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1.5px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    /* ─── Education & Experience rows ─── */
+    .entry {
+      margin-bottom: 10px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .entry-org {
+      font-weight: bold;
+      font-size: 11pt;
+    }
+
+    .entry-date {
+      font-size: 10.5pt;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .entry-title {
+      font-style: italic;
+      font-size: 11pt;
+    }
+
+    .entry-location {
+      font-style: italic;
+      font-size: 10.5pt;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    ul.bullets {
+      list-style: disc;
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    ul.bullets li {
+      font-size: 10.5pt;
+      margin-bottom: 2px;
+      line-height: 1.45;
+    }
+
+    /* ─── Skills ─── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+    }
+
+    .skill-row {
+      font-size: 10.5pt;
+    }
+
+    .skill-row strong {
+      font-weight: bold;
+    }
+
+    /* ─── Projects ─── */
+    .project-entry {
+      margin-bottom: 10px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .project-name {
+      font-weight: bold;
+      font-size: 11pt;
+    }
+
+    .project-type {
+      font-style: italic;
+      font-size: 10.5pt;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .project-stack {
+      font-style: italic;
+      font-size: 10pt;
+      margin-top: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <a href="index.html" class="btn-back">&#8592; Back to Portfolio</a>
+    <button class="btn-print" onclick="window.print()">&#128438; Print / Save PDF</button>
+  </div>
+
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Jhon Mark Gacelos</h1>
+      <div class="contact">
+        Samar, Philippines
+        <span class="divider-sep">|</span>
+        <a href="tel:09207112745">09207112745</a>
+        <span class="divider-sep">|</span>
+        <a href="mailto:jhonmark.gacelos5125@gmail.com">jhonmark.gacelos5125@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">Education</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">Samar State University</span>
+          <span class="entry-date">2022 &ndash; Present</span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-title">Bachelor of Science in Information Technology</span>
+          <span class="entry-location">Catbalogan City, Samar, Philippines</span>
+        </div>
+        <ul class="bullets">
+          <li>Currently in 3rd year; expected to graduate 2026</li>
+          <li>Coursework includes software engineering, database management, and web systems development</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <div class="section-title">Experience</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">Independent Freelancer</span>
+          <span class="entry-date">2024 &ndash; Present</span>
+        </div>
+        <div class="entry-sub">
+          <span class="entry-title">Web Development Freelancer</span>
+          <span class="entry-location">Remote</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed and developed responsive websites and web applications for individual and small-business clients</li>
+          <li>Delivered portfolio sites, landing pages, and business platforms with modern UI/UX standards</li>
+          <li>Maintained direct client communication, gathered requirements, and met project deadlines</li>
+          <li>Served 5+ clients across various industries, completing 10+ projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <div class="section-title">Projects</div>
+
+      <div class="project-entry">
+        <div class="project-header">
+          <span class="project-name">TestSentinel &mdash; Online Assessment Platform</span>
+          <span class="project-type">Academic Project</span>
+        </div>
+        <div class="project-stack">Laravel &middot; Blade &middot; Tailwind CSS &middot; JavaScript &middot; MySQL</div>
+        <ul class="bullets">
+          <li>Built an online examination system with anti-cheating features including tab-switch detection, fullscreen enforcement, and auto-submit on violation</li>
+          <li>Implemented timed exam logic, question randomization, and result analytics for instructors</li>
+        </ul>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-header">
+          <span class="project-name">University Budget Tracking &amp; Monitoring System</span>
+          <span class="project-type">Academic Project</span>
+        </div>
+        <div class="project-stack">Laravel &middot; Blade &middot; Tailwind CSS &middot; JavaScript &middot; MySQL</div>
+        <ul class="bullets">
+          <li>Developed a department-level budget monitoring tool with real-time expense tracking and reporting dashboards</li>
+          <li>Supported multi-user roles (admin, department head) with access-controlled views</li>
+        </ul>
+      </div>
+
+      <div class="project-entry">
+        <div class="project-header">
+          <span class="project-name">Personal Portfolio Website</span>
+          <span class="project-type">Personal Project</span>
+        </div>
+        <div class="project-stack">HTML &middot; Tailwind CSS &middot; JavaScript</div>
+        <ul class="bullets">
+          <li>Designed and built a fully responsive portfolio with dark mode, animated counters, photo gallery, and a chat widget</li>
+          <li>Optimized for performance with lazy-loading images and skeleton loading states</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-row"><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, Tailwind CSS, Bootstrap</div>
+        <div class="skill-row"><strong>Backend:</strong> PHP, Laravel, Node.js, Express.js, Python</div>
+        <div class="skill-row"><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Firebase</div>
+        <div class="skill-row"><strong>Tools:</strong> Git, GitHub, VS Code, Figma</div>
+      </div>
+    </section>
+
+    <!-- Services / What I Offer -->
+    <section>
+      <div class="section-title">Areas of Expertise</div>
+      <ul class="bullets">
+        <li><strong>Responsive Website Design</strong> &mdash; Mobile-first websites optimized for all screen sizes and devices</li>
+        <li><strong>Custom Web Applications</strong> &mdash; Full-stack business platforms, dashboards, and data-driven applications</li>
+        <li><strong>Portfolio &amp; Landing Pages</strong> &mdash; Clean, fast, and conversion-focused pages for individuals and businesses</li>
+      </ul>
+    </section>
+
+    <!-- Additional -->
+    <section>
+      <div class="section-title">Additional Information</div>
+      <ul class="bullets">
+        <li><strong>Languages:</strong> Filipino (native), English (professional proficiency)</li>
+        <li><strong>Availability:</strong> Open to freelance projects and remote collaborations</li>
+        <li><strong>Interests:</strong> Web technologies, UI/UX design, open-source development, continuous learning</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
