@@ -170,7 +170,7 @@ function appendTypingDots() {
 const QUICK_CHIPS = [
   { label: '🚀 Projects', message: 'Tell me about your projects' },
   { label: '🛠️ Skills', message: 'What are your skills?' },
-  { label: '💼 Hire JM', message: 'How can I hire you?' },
+  { label: '🎓 OJT', message: 'Are you looking for an OJT?' },
   { label: '📬 Contact', message: 'How do I contact you?' },
 ];
 
@@ -205,18 +205,18 @@ const CHAT_API = '/api/chat';
 const chatSessionId = crypto.randomUUID();
 
 const faqs = [
-  { keys: ['name', 'who'], answer: "I'm Jhon Mark Gacelos, a 3rd-year IT student and web development freelancer from Samar, Philippines." },
+  { keys: ['name', 'who'], answer: "I'm Jhon Mark Gacelos, a 4th-year BSIT student from Samar, Philippines, currently looking for an OJT / internship in web development." },
+  { keys: ['ojt', 'intern', 'practicum', 'trainee', 'hire', 'available'], answer: "Yes! I'm a 4th-year BSIT student looking for an OJT / internship in web development. Email me at jhonmark.gacelos5125@gmail.com or check my resume at the top of the page." },
   { keys: ['email', 'contact', 'reach'], answer: "You can reach me at jhonmark.gacelos5125@gmail.com or click the Send Email button above." },
-  { keys: ['resume', 'cv'], answer: "My resume is coming soon! In the meantime, check out my projects and skills on this page." },
-  { keys: ['skill', 'tech', 'stack', 'language'], answer: "I work with Laravel, React, Tailwind CSS, Node.js, Firebase, PHP, MySQL, and more. Check the Tech Stack section!" },
-  { keys: ['project', 'work', 'portfolio'], answer: "I've built TestSentinel (online assessment platform), a University Budget Tracking system, and this portfolio. See the Featured Projects section!" },
-  { keys: ['freelance', 'hire', 'service', 'available'], answer: "Yes! I'm open to freelance work — responsive websites, landing pages, and custom web apps. Send me an email!" },
+  { keys: ['resume', 'cv'], answer: "You can view or download my resume with the View Resume button at the top of the page." },
+  { keys: ['skill', 'tech', 'stack', 'language'], answer: "I've used Laravel, PHP, MySQL, Tailwind CSS, JavaScript, React, and Node.js in my projects, plus AI tools like ChatGPT, Claude Code, the Gemini API, and Cerebras AI. I'm still learning! Check the Tech Stack section." },
+  { keys: ['project', 'work', 'portfolio'], answer: "I've built two capstone projects, TestSentinel (an online assessment platform) and an Integrated Barangay Management System, plus this portfolio. See the Featured Projects section!" },
   { keys: ['location', 'where', 'from'], answer: "I'm based in Samar, Philippines." },
-  { keys: ['university', 'school', 'college', 'samar'], answer: "I study at Samar State University, taking up BS Information Technology (3rd year)." },
-  { keys: ['offer', 'do', 'build', 'create'], answer: "I build responsive websites, custom web applications, and portfolio/landing pages. Check the 'What I Offer' section!" },
+  { keys: ['university', 'school', 'college', 'samar'], answer: "I study at Samar State University, taking up BS Information Technology (4th year)." },
+  { keys: ['offer', 'do', 'build', 'create'], answer: "I've built responsive websites and school web apps with Laravel, Tailwind CSS, and JavaScript. Check the Featured Projects section!" },
   { keys: ['hello', 'hi', 'hey', 'sup'], answer: "Hey there! 👋 How can I help you? Ask me about Jhon's skills, projects, or how to get in touch." },
-  { keys: ['test', 'sentinel', 'assessment', 'cheat'], answer: "TestSentinel is an online assessment platform with anti-cheating features like tab-switch detection, fullscreen enforcement, and timed exams. Built with Laravel, Blade, Tailwind CSS, and MySQL." },
-  { keys: ['budget', 'tracking', 'monitor'], answer: "The University Budget Tracking & Monitoring system helps university departments manage budgets with real-time reports. Built with Laravel, Blade, Tailwind CSS, and MySQL." },
+  { keys: ['test', 'sentinel', 'assessment', 'cheat'], answer: "TestSentinel is one of my capstone projects, an online assessment platform with anti-cheating features like tab-switch detection, fullscreen enforcement, and face detection. Built with Laravel, Tailwind CSS, and MySQL. Try it at testsentinel.online." },
+  { keys: ['barangay', 'brgy', 'capstone', 'resident', 'blotter'], answer: "One of my capstone projects is an Integrated Barangay Management System: a centralized platform for managing resident records, complaint cases, document issuance, and community announcements. Built with Laravel, Blade, Tailwind CSS, Alpine.js, and PostgreSQL. It's live at brgycaranas.laravel.cloud." },
 ];
 
 function getKeywordReply(input) {
