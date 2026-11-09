@@ -55,12 +55,6 @@
       border: 1px solid #ccc;
     }
 
-    @media print {
-      .print-bar { display: none; }
-      body { font-size: 11pt; }
-      .page { padding: 36px 48px; }
-    }
-
     /* ─── Header ─── */
     .header {
       text-align: center;
@@ -68,7 +62,7 @@
     }
 
     .header h1 {
-      font-size: 22pt;
+      font-size: 18pt;
       font-weight: bold;
       letter-spacing: 0.03em;
       margin-bottom: 4px;
@@ -86,6 +80,10 @@
     }
 
     .header .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .header .contact a.portfolio-link {
       text-decoration: underline;
     }
 
@@ -214,10 +212,31 @@
       margin-top: 1px;
     }
 
+    .project-star {
+      font-size: 10.5pt;
+      line-height: 1.45;
+      margin-top: 4px;
+    }
+
     .project-stack a {
       font-style: normal;
       color: #000;
       text-decoration: underline;
+    }
+
+    /* ─── Print (kept last so it overrides the screen styles above) ─── */
+    @page {
+      size: letter;
+      margin: 0.5in 0.6in;
+    }
+
+    @media print {
+      .print-bar { display: none; }
+      .page { padding: 0; max-width: none; }
+      .header h1 { font-size: 16pt; }
+      section { margin-top: 10px; }
+      .entry, .project-entry { margin-bottom: 6px; }
+      .objective, .project-star, ul.bullets li, .skill-row { font-size: 10pt; line-height: 1.35; }
     }
   </style>
 </head>
@@ -239,8 +258,8 @@
         <a href="tel:09207112745">09207112745</a>
         <span class="divider-sep">|</span>
         <a href="mailto:jhonmark.gacelos5125@gmail.com">jhonmark.gacelos5125@gmail.com</a>
-        <span class="divider-sep">|</span>
-        <a href="https://jhonmark-portfolio.vercel.app/">jhonmark-portfolio.vercel.app</a>
+        <br>
+        <strong>Portfolio:</strong> <a href="https://jhonmark-portfolio.vercel.app/" class="portfolio-link">jhonmark-portfolio.vercel.app</a>
       </div>
     </div>
 
@@ -280,10 +299,7 @@
           <span class="project-type">Capstone Project</span>
         </div>
         <div class="project-stack">Laravel &middot; Blade &middot; Tailwind CSS &middot; JavaScript &middot; MySQL <span class="divider-sep">|</span> <a href="https://testsentinel.online">testsentinel.online</a></div>
-        <ul class="bullets">
-          <li>Built an online examination system with anti-cheating features including tab-switch detection, fullscreen enforcement, and auto-submit on violation</li>
-          <li>Implemented timed exam logic, question randomization, and result analytics for instructors</li>
-        </ul>
+        <p class="project-star">Online exams are hard to supervise because a proctor cannot watch every student's screen at once. For our capstone, I built an exam platform that helps proctors monitor students and flag suspicious behavior. I added fullscreen enforcement, tab-switch and copy/paste detection, in-browser face detection, and live alerts to proctors over WebSockets, and used Cerebras AI to help grade essays and analyze results. The system is deployed online with admin, proctor, and student roles, and it logs violations and alerts proctors as they happen.</p>
       </div>
 
       <div class="project-entry">
@@ -292,10 +308,7 @@
           <span class="project-type">Capstone Project</span>
         </div>
         <div class="project-stack">Laravel &middot; Blade &middot; Tailwind CSS &middot; Alpine.js &middot; PostgreSQL <span class="divider-sep">|</span> <a href="https://brgycaranas.laravel.cloud">brgycaranas.laravel.cloud</a></div>
-        <ul class="bullets">
-          <li>Built a centralized platform for managing resident records, complaint (blotter) cases, document issuance, and community announcements</li>
-          <li>Generated barangay documents as PDFs, stored uploaded files with Cloudinary, and kept an audit log of staff actions</li>
-        </ul>
+        <p class="project-star">Barangay Caranas needed one place to manage resident records, complaint cases, document requests, and announcements. My task was to build a centralized system for barangay staff, plus a portal where residents can request documents online. I built resident and household records, blotter cases with summons, document requests with ID and payment checks, PDF printing, analytics charts, audit logs, and two-factor login. The system is now deployed online, so staff can handle records, cases, and documents in one place while residents request, track, and verify documents online.</p>
       </div>
 
       <div class="project-entry">
@@ -304,16 +317,13 @@
           <span class="project-type">Personal Project</span>
         </div>
         <div class="project-stack">HTML &middot; Tailwind CSS &middot; JavaScript &middot; Gemini API <span class="divider-sep">|</span> <a href="https://jhonmark-portfolio.vercel.app/">jhonmark-portfolio.vercel.app</a></div>
-        <ul class="bullets">
-          <li>Designed and built a fully responsive portfolio with dark mode, animated counters, photo gallery, and an AI chat widget powered by the Gemini API</li>
-          <li>Optimized for performance with lazy-loading images and skeleton loading states</li>
-        </ul>
+        <p class="project-star">I needed a simple way to show my projects and skills to companies while applying for OJT, so I set out to build a site that works on any device and can answer common questions from visitors. I built it with HTML, Tailwind CSS, and JavaScript, and connected a chat widget to the Gemini API through a small Node.js backend. The result is a live portfolio with a chat assistant that falls back to preset answers when the AI is unavailable.</p>
       </div>
     </section>
 
     <!-- Skills -->
     <section>
-      <div class="section-title">Technical Skills</div>
+      <div class="section-title">Technical Skills (Basic Knowledge)</div>
       <div class="skills-grid">
         <div class="skill-row"><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React, Tailwind CSS, Bootstrap</div>
         <div class="skill-row"><strong>Backend:</strong> PHP, Laravel, Node.js, Express.js, Python</div>

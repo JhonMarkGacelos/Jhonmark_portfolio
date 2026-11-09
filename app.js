@@ -209,7 +209,7 @@ const faqs = [
   { keys: ['ojt', 'intern', 'practicum', 'trainee', 'hire', 'available'], answer: "Yes! I'm a 4th-year BSIT student looking for an OJT / internship in web development. Email me at jhonmark.gacelos5125@gmail.com or check my resume at the top of the page." },
   { keys: ['email', 'contact', 'reach'], answer: "You can reach me at jhonmark.gacelos5125@gmail.com or click the Send Email button above." },
   { keys: ['resume', 'cv'], answer: "You can view or download my resume with the View Resume button at the top of the page." },
-  { keys: ['skill', 'tech', 'stack', 'language'], answer: "I've used Laravel, PHP, MySQL, Tailwind CSS, JavaScript, React, and Node.js in my projects, plus AI tools like ChatGPT, Claude Code, the Gemini API, and Cerebras AI. I'm still learning! Check the Tech Stack section." },
+  { keys: ['skill', 'tech', 'stack', 'language'], answer: "I have basic knowledge of Laravel, PHP, MySQL, Tailwind CSS, JavaScript, React, and Node.js from my projects, plus AI tools like ChatGPT, Claude Code, the Gemini API, and Cerebras AI. I'm still learning! Check the Tech Stack section." },
   { keys: ['project', 'work', 'portfolio'], answer: "I've built two capstone projects, TestSentinel (an online assessment platform) and an Integrated Barangay Management System, plus this portfolio. See the Featured Projects section!" },
   { keys: ['location', 'where', 'from'], answer: "I'm based in Samar, Philippines." },
   { keys: ['university', 'school', 'college', 'samar'], answer: "I study at Samar State University, taking up BS Information Technology (4th year)." },

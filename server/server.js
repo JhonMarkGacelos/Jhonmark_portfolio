@@ -46,7 +46,7 @@ Contact:
 - Facebook: facebook.com/johnmark.gacelos.9
 - Instagram: instagram.com/jm_gacelos
 
-Skills & Tech Stack:
+Skills & Tech Stack (basic knowledge — he's still learning these):
 - Frontend: HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap
 - Backend: PHP, Laravel, Node.js, Express.js, Python
 - Databases: MySQL, PostgreSQL, Firebase, MongoDB
