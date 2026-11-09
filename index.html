@@ -183,7 +183,7 @@
           </h2>
           <div class="text-sm text-neutral-600 dark:text-neutral-400 space-y-3 leading-relaxed">
             <p>Hi! I'm Jhon Mark, a 4th-year Information Technology student at Samar State University, and I'm currently looking for an <strong class="font-semibold text-neutral-800 dark:text-neutral-200">OJT / internship placement in web development</strong>.</p>
-            <p>In school, I've worked on two capstone projects: an online assessment platform and an integrated barangay management system. They helped me learn the basics of turning requirements into features, working with databases, and finishing a project on time.</p>
+            <p>In school, I was the developer for two capstone projects: an online assessment platform and an integrated barangay management system. They helped me learn the basics of turning requirements into features, working with databases, and finishing a project on time.</p>
             <p>I know I still have a lot to learn. For my OJT, I'm hoping to join a team where I can help out on real projects, learn how professional developers work, and keep improving toward my goal of becoming a full-stack developer.</p>
             <p>I enjoy problem-solving and trying out new tools, and I'm always open to feedback. I believe technology can make people's lives easier, and I hope to build systems that are simple and useful.</p>
           </div>
@@ -278,12 +278,13 @@
                 </div>
                 <span class="text-[11px] bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-full flex-shrink-0 font-medium">Capstone</span>
               </div>
-              <dl class="star">
-                <div class="star-row"><dt>Situation</dt><dd>Online exams are hard to supervise, since a proctor can't watch every student's screen at once.</dd></div>
-                <div class="star-row"><dt>Task</dt><dd>Build an exam platform for our capstone that helps proctors monitor students and flags suspicious behavior.</dd></div>
-                <div class="star-row"><dt>Action</dt><dd>Added fullscreen enforcement, tab-switch and copy/paste detection, and in-browser face detection, with live alerts sent to proctors over WebSockets. Used Cerebras AI to help grade essays and analyze results.</dd></div>
-                <div class="star-row star-result"><dt>Result</dt><dd>Deployed online as a working system with admin, proctor, and student roles, where violations are logged and proctors are alerted as they happen.</dd></div>
-              </dl>
+              <p class="project-role"><span>Role:</span> Developer — I built all the features below</p>
+              <ul class="project-points">
+                <li>Anti-cheating checks: fullscreen mode, tab-switch and copy/paste detection, and face detection</li>
+                <li>Live alerts to proctors using WebSockets (Laravel Reverb)</li>
+                <li>AI-assisted essay grading and result analysis with Cerebras AI</li>
+                <li>Deployed online with admin, proctor, and student roles</li>
+              </ul>
               <div class="flex flex-wrap gap-1.5 mt-3">
                 <span class="tag">Laravel</span><span class="tag">Tailwind CSS</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">Laravel Reverb</span><span class="tag">face-api.js</span><span class="tag">Cerebras AI</span>
               </div>
@@ -292,7 +293,7 @@
               <div class="flex items-start justify-between gap-3">
                 <div class="flex-1">
                   <h3 class="font-semibold text-sm text-neutral-900 dark:text-white">Integrated Barangay Management System</h3>
-                  <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">A centralized platform for managing resident records, complaint cases, document issuance, and community announcements.</p>
+                  <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">A centralized platform for resident records, complaint cases, documents, and announcements.</p>
                   <a href="https://brgycaranas.laravel.cloud" target="_blank" rel="noopener" class="project-link">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     brgycaranas.laravel.cloud
@@ -300,12 +301,13 @@
                 </div>
                 <span class="text-[11px] bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-full flex-shrink-0 font-medium">Capstone</span>
               </div>
-              <dl class="star">
-                <div class="star-row"><dt>Situation</dt><dd>My client, Barangay Caranas, needed one place to manage resident records, complaint cases, document requests, and announcements.</dd></div>
-                <div class="star-row"><dt>Task</dt><dd>Build a centralized system for barangay staff, plus a portal where residents can request documents online.</dd></div>
-                <div class="star-row"><dt>Action</dt><dd>Built resident and household records, blotter cases with summons, document requests with ID and payment checks, PDF printing, analytics charts, audit logs, and two-factor login.</dd></div>
-                <div class="star-row star-result"><dt>Result</dt><dd>Deployed online for the barangay. Staff can handle records, cases, and documents in one system, residents can request and track documents online, and issued documents can be checked on a public verification page.</dd></div>
-              </dl>
+              <p class="project-role"><span>Role:</span> Developer — I built all the features below</p>
+              <ul class="project-points">
+                <li>Resident and household records, plus blotter cases with summons</li>
+                <li>Online document requests with ID and payment checks, PDF printing, and public verification</li>
+                <li>Analytics charts, audit logs, and two-factor login</li>
+                <li>Deployed online for Barangay Caranas</li>
+              </ul>
               <div class="flex flex-wrap gap-1.5 mt-3">
                 <span class="tag">Laravel</span><span class="tag">Blade</span><span class="tag">Tailwind CSS</span><span class="tag">Alpine.js</span><span class="tag">PostgreSQL</span><span class="tag">Cloudinary</span>
               </div>
@@ -322,12 +324,12 @@
                 </div>
                 <span class="text-[11px] bg-violet-50 dark:bg-violet-500/10 text-violet-600 dark:text-violet-400 px-2 py-0.5 rounded-full flex-shrink-0 font-medium">Personal</span>
               </div>
-              <dl class="star">
-                <div class="star-row"><dt>Situation</dt><dd>I needed a simple way to show my projects and skills to companies while applying for OJT.</dd></div>
-                <div class="star-row"><dt>Task</dt><dd>Build a site that works well on any device and can answer common questions from visitors.</dd></div>
-                <div class="star-row"><dt>Action</dt><dd>Built it with HTML, Tailwind CSS, and JavaScript, then connected a chat widget to the Gemini API through a small Node.js backend.</dd></div>
-                <div class="star-row star-result"><dt>Result</dt><dd>A live portfolio with a chat assistant that falls back to preset answers when the AI is unavailable.</dd></div>
-              </dl>
+              <p class="project-role"><span>Role:</span> Developer — designed and built on my own</p>
+              <ul class="project-points">
+                <li>Responsive layout with dark mode, built with HTML, Tailwind CSS, and JavaScript</li>
+                <li>AI chat assistant using the Gemini API and a small Node.js backend</li>
+                <li>Deployed on Vercel, with preset answers if the AI is unavailable</li>
+              </ul>
               <div class="flex flex-wrap gap-1.5 mt-3">
                 <span class="tag">HTML</span><span class="tag">Tailwind CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Gemini API</span>
               </div>

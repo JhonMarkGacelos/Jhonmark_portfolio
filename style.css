@@ -246,71 +246,53 @@ body {
   text-decoration-color: currentColor;
 }
 
-/* ── STAR breakdown (inside project cards) ───────────────── */
-.star {
-  display: grid;
-  gap: 0.5rem;
+/* ── Role + bullet points (inside project cards) ─────────── */
+.project-role {
   margin-top: 0.875rem;
   padding-top: 0.875rem;
   border-top: 1px dashed #e5e5e5;
+  font-size: 0.75rem;
+  color: #525252;
 }
 
-.star-row {
-  display: grid;
-  grid-template-columns: 4.75rem 1fr;
-  gap: 0.75rem;
-  align-items: baseline;
-}
-
-.star-row dt {
-  font-size: 0.625rem;
+.project-role span {
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #a3a3a3;
-}
-
-.star-row dt::first-letter {
   color: #171717;
 }
 
-.star-row dd {
-  margin: 0;
+.project-points {
+  display: grid;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+.project-points li {
   font-size: 0.75rem;
   line-height: 1.5;
   color: #525252;
 }
 
-.star-result dd {
-  color: #171717;
-  font-weight: 500;
-}
-
-.dark .star {
-  border-top-color: rgba(139, 92, 246, 0.15);
-}
-
-.dark .star-row dt {
-  color: #737373;
-}
-
-.dark .star-row dt::first-letter {
-  color: #c4b5fd;
-}
-
-.dark .star-row dd {
+.project-points li::marker {
   color: #a3a3a3;
 }
 
-.dark .star-result dd {
+.dark .project-role {
+  border-top-color: rgba(139, 92, 246, 0.15);
+  color: #a3a3a3;
+}
+
+.dark .project-role span {
   color: #e5e5e5;
 }
 
-@media (max-width: 480px) {
-  .star-row {
-    grid-template-columns: 1fr;
-    gap: 0.125rem;
-  }
+.dark .project-points li {
+  color: #a3a3a3;
+}
+
+.dark .project-points li::marker {
+  color: #8b5cf6;
 }
 
 /* ── Social Link ─────────────────────────────────────────── */

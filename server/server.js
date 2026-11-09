@@ -53,7 +53,7 @@ Skills & Tech Stack (basic knowledge — he's still learning these):
 - Tools: Git, GitHub, VS Code, Figma
 - AI Tools: ChatGPT, Claude Code, Gemini API, Cerebras AI
 
-Projects:
+Projects (Jhon Mark was the developer and built all the features of both capstones):
 1. TestSentinel (Capstone) — An online assessment platform with anti-cheating features: fullscreen enforcement, tab-switch and copy/paste detection, face detection, live proctor alerts, and Cerebras AI essay grading. Stack: Laravel, Tailwind CSS, MySQL, Redis, Laravel Reverb. Live: testsentinel.online
 2. Integrated Barangay Management System (Capstone) — A centralized platform for managing resident records, complaint cases, document issuance, and community announcements. Stack: Laravel, Blade, Tailwind CSS, Alpine.js, PostgreSQL. Built for Barangay Caranas. Live: brgycaranas.laravel.cloud
 3. This portfolio website — Responsive personal portfolio with dark mode, AI chat widget, and photo gallery. Stack: HTML, Tailwind CSS, JavaScript, Node.js. Live: jhonmark-portfolio.vercel.app

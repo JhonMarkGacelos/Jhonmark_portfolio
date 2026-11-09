@@ -215,8 +215,8 @@ const faqs = [
   { keys: ['university', 'school', 'college', 'samar'], answer: "I study at Samar State University, taking up BS Information Technology (4th year)." },
   { keys: ['offer', 'do', 'build', 'create'], answer: "I've built responsive websites and school web apps with Laravel, Tailwind CSS, and JavaScript. Check the Featured Projects section!" },
   { keys: ['hello', 'hi', 'hey', 'sup'], answer: "Hey there! 👋 How can I help you? Ask me about Jhon's skills, projects, or how to get in touch." },
-  { keys: ['test', 'sentinel', 'assessment', 'cheat'], answer: "TestSentinel is one of my capstone projects, an online assessment platform with anti-cheating features like tab-switch detection, fullscreen enforcement, and face detection. Built with Laravel, Tailwind CSS, and MySQL. Try it at testsentinel.online." },
-  { keys: ['barangay', 'brgy', 'capstone', 'resident', 'blotter'], answer: "One of my capstone projects is an Integrated Barangay Management System: a centralized platform for managing resident records, complaint cases, document issuance, and community announcements. Built with Laravel, Blade, Tailwind CSS, Alpine.js, and PostgreSQL. It's live at brgycaranas.laravel.cloud." },
+  { keys: ['test', 'sentinel', 'assessment', 'cheat'], answer: "TestSentinel is one of my capstone projects, and I was its developer. It's an online assessment platform with anti-cheating features like tab-switch detection, fullscreen enforcement, and face detection. Built with Laravel, Tailwind CSS, and MySQL. Try it at testsentinel.online." },
+  { keys: ['barangay', 'brgy', 'capstone', 'resident', 'blotter'], answer: "I was the developer of one of my capstone projects, an Integrated Barangay Management System: a centralized platform for managing resident records, complaint cases, document issuance, and community announcements. Built with Laravel, Blade, Tailwind CSS, Alpine.js, and PostgreSQL. It's live at brgycaranas.laravel.cloud." },
 ];
 
 function getKeywordReply(input) {
